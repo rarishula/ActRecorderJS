@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行動記録アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="common.js"></script>
+    <h1>行動記録アプリ</h1>
+    
+    <!-- 行動記録用の入力フォーム -->
+    <div id="input-form">
+        <h2>記録の入力</h2>
+        <label>日付: <input type="date" id="date-input"></label>
+        <label>時刻: 
+            <select id="hour-input"></select>
+        </label>
+        <label>ジャンル: 
+            <select id="genre-input">
+                <option value="仕事">仕事</option>
+                <option value="勉強">勉強</option>
+                <option value="遊び">遊び</option>
+                <option value="運動">運動</option>
+                <option value="その他">その他</option>
+            </select>
+        </label>
+        <label>詳細: <input type="text" id="detail-input"></label>
+        <label>理由: <input type="text" id="reason-input"></label>
+        <label>結果: <input type="text" id="result-input"></label>
+        <button id="save-button">保存</button>
+    </div>
+
+    <h2>簡易表示カレンダー</h2>
+    <div id="simple-calendar"></div>
+
+    <h2>詳細表示カレンダー</h2>
+    <div id="detailed-calendar"></div>
+
+    <script src="main_calendar.js"></script>
+
+    <!-- 健康記録用の入力フォーム -->
+    <h2>健康記録の入力</h2>
+    <div id="health-form">
+        <label>朝食時刻: <select id="breakfast-time"></select></label>
+        <label>昼食時刻: <select id="lunch-time"></select></label>
+        <label>夕食時刻: <select id="dinner-time"></select></label>
+        <label>投薬時刻: <select id="medication-time"></select></label>
+        <label>投薬種類: <input type="text" id="medication-type"></label>
+        <label>健康(肉体): <input type="text" id="health-physical"></label>
+        <label>健康(精神): <input type="text" id="health-mental"></label>
+        <label>健康(頭脳): <input type="text" id="health-brain"></label>
+        <button id="health-save-button">保存</button>
+    </div>
+
+    <h2>健康カレンダー</h2>
+    <div id="health-calendar"></div>
+
+    <script src="health_calendar.js"></script>
+</body>
+</html>

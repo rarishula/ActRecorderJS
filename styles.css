@@ -1,0 +1,24 @@
+/* テーブル全体のスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse; /* セルの線を結合せずに表示 */
+    border: 2px solid black; /* テーブル全体の外枠を黒に指定 */
+}
+
+/* セル間の黒い線 */
+th, td {
+    border: 1px solid black; /* 各セル間の境界線を黒に設定 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 8px; /* セル内の余白を確保 */
+}
+
+/* セルの高さを統一 */
+td {
+    height: 50px;
+}
+
+/* ヘッダーセルの背景色を設定（必要に応じて） */
+th {
+    background-color: #f4f4f4; /* ヘッダーの背景色を薄い灰色に設定 */
+    font-weight: bold; /* ヘッダーを太字に */
+}
