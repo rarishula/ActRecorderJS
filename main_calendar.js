@@ -67,14 +67,38 @@ document.getElementById("date-input").addEventListener("change", (event) => {
 // ジャンルに応じた色を取得
 const getGenreColor = (genre) => {
     const colors = {
+        // 仕事関連
         "仕事": "#FFD700",
-        "勉強": "#87CEEB",
-        "遊び": "#98FB98",
+        "勉強(インプット)": "#ADD8E6",
+        "勉強(その他)": "#87CEEB",
+        "傍聴": "#4682B4",
+
+        // 運動と家事
         "運動": "#FFA500",
+        "家事・作業": "#FF8C00",
+        "製作": "#FFDAB9",
+        "移動・通院": "#FFE4B5",
+
+        // 生活関連
+        "睡眠": "#D8BFD8",
+        "休憩": "#E6E6FA",
+        "食事": "#FFFACD",
+
+        // 娯楽
+        "遊び": "#98FB98",
+        "ゲーム(練習)": "#32CD32",
+        "ゲーム(作業)": "#3CB371",
+        "ゲーム(その他)": "#8FBC8F",
+        "動画視聴": "#20B2AA",
+        "SNS・掲示板": "#00CED1",
+        "性": "#FF69B4",
+
+        // その他
         "その他": "#D3D3D3"
     };
     return colors[genre] || "#FFFFFF";
 };
+
 
 // 1時間ごとの時刻選択肢を生成（main_calendar専用）
 const generateHourlyTimeOptionsForMain = (selectId) => {
